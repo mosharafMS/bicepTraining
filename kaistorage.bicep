@@ -29,11 +29,11 @@ resource mystorageaccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
 }
 
 // deploy the storage account to the specified resource group and subscription
-// az deployment group create --resource-group azure-monitoring-training --template-file C:\LocalWork\anl-pipelinetest\scripts\DeployStorageAccount2.bicep
-// az deployment group create --resource-group azure-monitor-training --name KaiFirst --template-file .\scripts\DeployStorageAccount2.bicep
 
 // to deploy to a resource group - scope == resource group
-// New-AzResourceGroupDeployment -ResourceGroupName azure-monitoring-training -TemplateFile .\scripts\DeployStorageAccount2.bicep
+
 // output the name of the storage account 
 output storageaccount string = mystorageaccount.name
+
+// command to run: az deployment group create --resource-group azure-monitoring-training --name KaiFirst --template-file kaistorage.bicep
 
