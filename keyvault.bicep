@@ -1,3 +1,5 @@
+// here is some comment
+// here is another comment
 param keyVaultName string
 
 param location string = resourceGroup().location
